@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wealth in Health</title>
+  <link href="form.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+  
+  <script src="form.js"></script>
+
+	<nav class="container" id="links">
+      <a href="index.html" > Home</a>
+      <a href="form.html" > Medicaid </a>
+     <a href="data.html"> Health Care Centers </a>
+      <a href="graphs.html" > Graphs</a>
+    </nav>
+	
+	<div id = "banner" class = "container center">
+		<h1 data-aos="fade-up">Medicaid Qualification</h1>
+
+  </div>
+  <div id = "background" data-aos="fade-up">
+  <div id = info> Medicaid is a state funded insurance program aimed towards mainly low-income families and the elderly. Medicaid was founded to be able to insure low income families were able to access healthcare. Medicare in New York covers:  regular exams, immunizations, doctor and clinic visits, relevant medical supplies and equipment, lab tests and x-rays, vision, dental, nursing home services, hospital stays, emergencies, and prescriptions. <br> <br> <b> <p>Use the following form to see if you are qualified to recieve Medicaid!</p></b></div>
+  <div id = "form" class = "container center">
+    <form>
+  <label for="borough">Borough of Residence</label><br>
+  <select id="borough" >
+    <option value="Queens">Queens</option>
+    <option value="Brooklyn">Brooklyn</option>
+    <option value="Manhattan">Manhattan</option>
+    <option value="Bronx">Bronx</option>
+    <option value="Staten Island">Staten Island</option>
+  </select>
+    <br>
+<br>
+  <label for="houseSize">Select Your Household Size</label><br>
+  <select id="houseSize" >
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+    <option value="eight">8</option>
+  </select>
+    <br>
+<br>
+    <label for="type">Select What Best applies</label><br>
+  <select id="housing" >
+    <option value="adultAndsingle">Adults under 65; parents/caretakers; 
+and 19 & 20 year olds living alone</option>
+    <option value="adultWithKid"> Has a child that is between the ages of 1 and 18</option>
+    <option value="adultWithDisability">Individuals who are Age 65 or older, Blind or Disabled </option>
+    <option value="PregWoman"> Preganant Women OR has infant under 1 year old</option>
+  
+  </select>
+    <br>
+<br>
+   <label  for="yearlyIncome">Yearly Income</label><br>
+  <select id="yearlyIncome" >
+    <option value="t1">$18,755</option>
+    <option value="t2"> $25,268 - $28,198</option>
+    <option value="t3"> $31,782 $35,467   </option>
+   <option value="t4"> $38,295 $42,735</option>
+    <option value="t5">$44,809 $50,004 </option>
+    <option value="t6">$51,323 -$57,273  </option>
+    <option value="t7"> $57,836 - $64,542  </option>
+    <option value="t8">$64,350- $71,811 </option>
+  </select>
+    <br><br>
+    </form>
+  </br>
+    <button onclick ="certified()"> Submit </button>
+	</div>
+  </div>
+  <div id ="output" ></div>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script>
+    
+    AOS.init({
+      duration:1200
+    });
+  </script>
+	
+</body>
+
+</html>

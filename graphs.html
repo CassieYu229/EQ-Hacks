@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Wealth in Health</title>
+  <link href="graph.css" rel="stylesheet" type="text/css" /> 
+  <link href="charts.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js" integrity="sha512-6LKCH7i2+zMNczKuCT9ciXgFCKFp3MevWTZUXDlk7azIYZ2wF5LRsrwZqO7Flt00enUI+HwzzT5uhOvy6MNPiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+	
+	<script src="d3lib.js"></script>
+  <script src="c3lib.js"></script>
+  <script src="filterdropdown.js"></script>
+  <script src="helper1.js"> </script>
+  <script src="script.js"></script>		
+</head>
+
+<!-- <body onload = "exploringCharts()"> -->
+<body onload="init_ana()">
+
+
+	<nav class="container" id="links">
+      <a href="index.html" > Home</a>
+      <a href="form.html" > Medicaid </a>
+     <a href="data.html"> Health Care Centers </a>
+      <a href="graphs.html" > Graphs</a>
+  </nav>
+
+  <div id ="banner" data-aos="fade-up"> Chart Data</div>
+
+	<div class = "cont" data-aos="fade-up">
+		<p id = "info">As researchers and oberservers we, Wealth in Health, find it important to look through the open data provided to us. One of the most interesting findings from such data was the disparity in the numbers of hospitals in each borough. For example, even though Queens has a population of 2.271 million, it has significantly less hospitals than Manhattan which has a population of 1.629 million. <br>  <br> <b>Use the charts below to discover and look through this data!</b>
+    </p>
+		<div  id = "chartSel" style = "border:2px solid white;">
+			<select id = "chartType" style = "width:200px:">
+				<option>Select Chart Type</option>
+				<option value = "bar">Bar</option>
+				<option value = "pie">Pie</option>
+				<option value = "donut">Donut</option>
+				
+			</select>
+			<input type = "button" value="Display" onclick = "filterByBorough()" class = "button">
+		</div>
+		<div id = "output"></div>
+
+
+		
+		 <div id = "boxes">
+      <div>
+        <input type="checkbox" value="cd" name="cd2" id="cdID">
+        <label for="cd2"> Council District </label>
+      </div>
+
+      <div>
+        <input type="checkbox" value="cb" name="cb2" id="cbID">
+        <label for="cb2"> Community board </label>
+      </div>
+
+      <div >
+        <input type="checkbox" value="ct" name="ct2" id="ctID">
+        <label for="ct2"> Census Tract </label>
+      </div>
+    </div>
+    <div id = "charts2">
+    <select id="chartType2">
+      <option> Select Chart Type </option>
+      <option value="area"> Area </option>
+      <option value="line"> Line </option>
+      <option value="scatter"> Scatter </option>
+    </select>
+    <input type="button" value="Display" onclick="chartByOtherStats(get('chartType2').value)" class="button">
+		</div>
+    <div id="output2"></div>
+
+  <script>
+    
+    AOS.init({
+      duration:1200
+    });
+  </script>
+
+		
+</body>
+
+</html>

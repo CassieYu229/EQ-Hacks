@@ -1,0 +1,232 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin:0%;
+    overflow-x:hidden;
+  }
+  *{
+    transition: 1s;
+  }
+  .container{
+    display:flex;
+  }
+  /* 
+  nav{
+    z-index:2;
+  
+    position:sticky;
+    width: 98%;
+    transition: top 0.3s;
+    align-items: right;
+    justify-content: right;
+  
+  }
+  nav a{
+    font-family: Verdana;
+    font-size:13pt;
+    color:black;
+    padding:20px;
+    text-align:center;
+    text-decoration:none;
+    filter:opacity(85%);
+    letter-spacing: 1px;
+  }
+  nav a:hover{
+    letter-spacing: 5px;
+    background-color: gainsboro;
+    filter: opacity(90%);
+    color:black;
+  }
+   */
+  nav{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    border-bottom:2px solid gray;
+  }
+  
+  nav a{
+    font-family: Verdana;
+    flex: 1;
+    text-decoration: none;
+    text-align:center;
+    padding: 15px;
+    color: #f80000;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    background-color:white;
+    font-weight: bold;
+  }
+  
+  nav a:hover{
+    color: white;
+    /* border-bottom: 2px solid gray; */
+    transition: 0.4s;
+    background-color: #f80000;
+    letter-spacing: 5px;
+  }
+  /* #banner{
+    padding:250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(248, 124, 124, 0.42) , rgba(245, 149, 149, 0.34) ), url("hospitalImage.jpg");
+  } */
+  
+  #banner h1{
+    flex:1;
+    font-family: Verdana;
+    font-size: 60pt;
+    color:white;
+    filter:opacity(90%);
+    text-shadow: 2px 4px 6px rgba(0 0 0 / 90%);
+    letter-spacing: 1px;
+  }
+  #about{
+    color:white;
+    padding:10px;
+    width: 50%;
+    text-align:center;
+    justify-content: center;
+    border-radius:6px;
+    background-color:rgba(248, 124, 124, 0.42) ;
+  }
+  
+  #home{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("redWave.jpg");
+    box-shadow: 0px 0px 0px 1000px rgba(0,0,0,0.1) inset;
+    justify-content: center;
+    align-items:center;
+    height:850px;
+  }
+  
+  #home div{
+    margin-top:30px;
+    flex:1;
+  }
+  #homeText{
+    padding:20px;
+    font-size:20pt;
+    margin-left:40px;
+    position:sticky;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #homeText h1{
+    font-size: 60pt;
+    padding: 20px;
+  }
+  #homeText p{
+    font-size: 16pt;
+    border-radius:6px;
+    color: black;
+    font-weight:bold;
+    letter-spacing: 1px;
+    padding: 20px;
+  }
+  
+  #icon img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
+    max-height:100%;
+  }
+  
+  #healthBG{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("healthImage.jpg");
+    justify-content: center;
+    align-items:center;
+    height:700px;
+    border-top: 5px solid #f80000;
+  }
+  
+  #healthBG div{
+    flex:1;
+    background-color:white;
+    border-radius: 20px;
+    height:300px;
+    margin:20px;
+    padding:20px;
+  }
+  
+  .zoom-in-out-animation{
+    animation: zoom-in-zoom-out 2s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform:scale(1.1, 1.1);
+    }
+    100%{
+      transform:scale(1,1);
+    }
+  }
+  
+  .button{
+    background-color:#f80000;
+    border: #f80000;
+    color:white;
+    padding:15px;
+    margin-left:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.05); 
+    border-radius:2px;
+    font-size: 20pt;
+  }
+  
+  .button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    transition:0.4s;
+    background-color:white;
+    color:#f80000;
+  }
+  
+  
+  
+  
+  #healthBG{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  #healthBG h1{
+    color:#f80000;
+    font-size: 25pt;
+  }
+   #healthBG p{
+    padding: 20px;
+    font-size: 17pt;
+  }
+  #healthBG a{
+    background-color:#f80000;
+    border: #f80000;
+    color:white;
+    padding:15px;
+    margin-left:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.05); 
+    border-radius:2px;
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: none;
+  }
+  #healthBG a:hover{
+    letter-spacing: 4px;
+  }

@@ -1,0 +1,127 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin:0%;
+    overflow-x:hidden;
+  }
+  *{
+    transition: 1s;
+  }
+  .container{
+    display:flex;
+  }
+  
+  nav{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    border-bottom:2px solid gray;
+  }
+  
+  nav a{
+    font-family: Verdana;
+    flex: 1;
+    text-decoration: none;
+    text-align:center;
+    padding: 15px;
+    color: #f80000;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    background-color:white;
+    font-weight: bold;
+  }
+  
+  nav a:hover{
+    color: white;
+    /* border-bottom: 2px solid gray; */
+    transition: 0.4s;
+    background-color: #f80000;
+    letter-spacing: 5px;
+  }
+  #banner{
+    letter-spacing:2px;
+    display:flex;
+    padding: 30px;
+    padding-top: 100px;
+    border-bottom: 10px solid #f80000 ;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35pt;
+    font-weight:bold ;
+    
+  }
+  #info{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    
+  }
+  #info{
+    margin-left:20%;
+    margin-right:20%;
+    font-size:13pt;
+    padding:20px;
+  }
+  #info p{
+    font-size:16pt;
+    font-weight: bold;
+  }
+  
+  select{
+    color: #f80000;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align:center;
+    padding:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  
+  }
+   input{
+    padding:6px;
+    
+    
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-size: 14px;
+    
+    background-color: #f80000;
+    color: white;
+    border: 3px solid #f83e3e ;
+  }
+   input:hover{
+    letter-spacing: 2px;
+    
+  }
+  #chartSel{
+    padding: 20px;
+    margin-left: 10%;
+  }
+  #output{
+    padding: 20px;
+  }
+  
+  #boxes{
+      padding: 20px;
+      margin-left: 10%;
+  }
+  #output2{
+      padding: 20px;
+  }
+  
+  #charts2{
+      padding: 20px;
+      margin-left: 10%;
+  }
